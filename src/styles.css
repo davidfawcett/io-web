@@ -26,11 +26,13 @@ h1 {
     font-style: normal;
     letter-spacing: 3px;
     text-align: center;
+    text-shadow: 0px 0px 1px #466680;
 }
 
 h2 {
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
+    text-shadow: 0px 0px 1px #466680;
     /* font-style: bold; */
     /* letter-spacing: 3px; */
 }
