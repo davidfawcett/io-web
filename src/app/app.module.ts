@@ -10,15 +10,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { Router, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    NoPageFoundComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,11 +29,8 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
     MatRadioModule,
     MatCardModule,
     MatTooltipModule,
-    RouterModule.forRoot([
-      { path: '', component: AppComponent },
-      { path: 'about', component: AboutComponent },
-      { path: '**', component: NoPageFoundComponent },
-    ]),
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
