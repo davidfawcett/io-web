@@ -76,7 +76,8 @@ html, body {
         width: 100%;
         text-align: center;
         color: #F4E0A2;
-        /* padding: 10px; */
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     .mat-form-field-label .mat-form-field-appearance-legacy{
@@ -139,7 +140,8 @@ html, body {
             width: 100%;
             text-align: center;
             color: #F4E0A2;
-            /* padding: 10px; */
+            padding-bottom: 10px;
+            padding-top: 10px;
         }
 
 }
