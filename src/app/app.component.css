@@ -1,3 +1,7 @@
+.wrapper {
+    width: 100%;
+}
+
 .navWrapper {
     background: #F4E0A2;
 }
@@ -6,14 +10,15 @@
     background: #fff;
     border: 1px solid #000
 }
-/* 
-footer {
+
+/* footer {
     margin-top:20px;
     background: #2b3f4f;
-}
-html, body {
-    background: #2b3f4f;
 } */
+html, body {
+    width: 100%;
+    background: #2b3f4f;
+}
 
 
 @media (max-width:599px)
@@ -24,6 +29,7 @@ html, body {
         display: grid;
         grid-template-columns: 1fr;
         background: #466680;
+        background: green;
         grid-template-rows: auto repeat(1, 1fr) auto;
         grid-gap: 10px;
         /* width: 448px; */
