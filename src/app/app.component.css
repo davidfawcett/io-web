@@ -121,7 +121,7 @@ html, body {
             padding-left: 5%;
             padding-right:5%;
             z-index: 2;
-            border-radius: 0px 00px 20px 20px;
+            /* border-radius: 0px 00px 20px 20px; */
             /* width: 100%; */
             /* font-size:calc(18px + 1.5vh); */
             /* box-shadow: 5px 5px 25px rgb(0,0,0,0.5); */
@@ -183,7 +183,7 @@ html, body {
         padding-left: 5%;
         padding-right:5%;
         z-index: 2;
-        border-radius: 0px 20px 20px 20px;
+        /* border-radius: 0px 20px 20px 20px; */
         /* width: 100%; */
         font-size:calc(18px + 1.5vh);
         /* box-shadow: 5px 5px 25px rgb(0,0,0,0.5); */
