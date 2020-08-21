@@ -365,6 +365,16 @@ body {
         /* width: 50% */
     }
     
+    .howitworks video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        max-height: 90vh;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 5px black;
+    }
+
     .pricing {
         display: grid;
         grid-column: all;
@@ -693,6 +703,16 @@ body {
             max-width: 90%;
         }
         
+        .howitworks video {
+            float: right;
+            margin-left: 20px;
+            /* height: 100%; */
+            align-self: center;
+            max-width: 40%;
+            max-height: 90vh;
+            border-radius: 50px;
+            box-shadow: 0px 0px 10px 5px black;
+        }
 
         .overview h2 {
             text-align: left;
@@ -1024,6 +1044,8 @@ body {
         border-radius: 30px;
         padding-bottom: 20px;
         justify-content: space-between;
+        justify-self: center;
+        max-width: 1200px;
     }
     
     .howitworks h1, h2 {
@@ -1031,13 +1053,20 @@ body {
         /* padding:20px; */
     }
 
-    .howitworks img {
+    /* .howitworks img {
         float: right;
         margin-left: 20px;
         height: 100%;
         max-width: 90%;
+    } */
+    .howitworks video {
+        float: right;
+        margin-left: 20px;
+        max-width: 25%;
+        max-height: 90vh;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 5px black;
     }
-
     .pricing {
         display: grid;
         grid-column: 1/5;

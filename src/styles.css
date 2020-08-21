@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans|Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans|Crimson+Text&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Cinzel'); */
 
 html, body {
@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-family: 'PT Sans', sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-style: normal;
     letter-spacing: 3px;
     text-align: center;
