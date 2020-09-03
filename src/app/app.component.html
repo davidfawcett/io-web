@@ -1,22 +1,26 @@
 <div class="wrapper">
   <nav class="navWrapper">
-    <button mat-stroked-button routerLink="/">
+    <button mat-raised-button routerLink="/">
       Home
     </button>
-    <button mat-stroked-button disabled matTooltip="Coming Soon!">
+    <button mat-raised-button disabled matTooltip="Coming Soon!">
       Psychology
     </button>
     <!-- <button mat-stroked-button>
       Software / IT
     </button> -->
-    <button mat-stroked-button routerLink="/about">
+    <button mat-raised-button routerLink="/about">
       About Us
     </button>
-    <button mat-stroked-button disabled matTooltip="Coming Soon!">
-      Login
-    </button>
+    <div *ngIf="!(afAuth.authState | async)">
+            <button mat-raised-button appGoogleSignin>
+              <img src="/assets/btn_google_light_normal_ios.svg" /> Login with Google
+            </button>
+    </div>
+    <div *ngIf="afAuth.authState | async as user" class="logout">
+        <button mat-raised-button (click)="afAuth.signOut()">Logout</button>
+      </div>
   </nav>
-
   <router-outlet></router-outlet>
   <footer>
     <h2>Inside Outcomes, 2020.</h2>

@@ -13,11 +13,16 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule, AngularFirestore } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { GoogleSigninDirective } from './user/google-signin.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    GoogleSigninDirective,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,9 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatCardModule,
     MatTooltipModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
